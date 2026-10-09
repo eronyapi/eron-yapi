@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Erkan Bostancı, İnşaat Mühendisi">\n<meta name="description" content="ERON YAPI; iş makinesi, kamyon, hafriyat ve taşeronluk hizmetleri ile şantiye yönetimi, hakediş, ihale ve teklif dosyaları, şantiye muhasebesi, teknik çizim ve tasarım hizmetleri.">
+<title>ERON YAPI | Yol, Baraj, Değebaj, Sanat Yapıları, Gölet, Hafriyat ve Taşeronluk</title>
+<style>
+:root{--navy:#0b1530;--navy2:#122448;--blue:#2878ff;--cyan:#36d6d0;--ink:#18233b;--muted:#68758d;--bg:#f5f7fb;--white:#fff;--line:#e2e8f2;--orange:#ffb45c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg)}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(11,21,48,.94);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:29px;font-weight:900;letter-spacing:2px;color:#fff}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:20px;align-items:center;font-size:13px;color:#dbe5ff}.navlinks a:hover{color:var(--cyan)}.nav-cta{background:var(--cyan);color:#08152c!important;padding:12px 16px;border-radius:12px;font-weight:800}.menu{display:none;background:none;border:1px solid #52617d;color:white;border-radius:10px;padding:8px 12px;font-size:20px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 15%,#1c4e86 0,transparent 32%),linear-gradient(125deg,#09132b 0%,#10254b 55%,#0d1b39 100%);color:#fff;padding:90px 0 76px}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(54,214,208,.22);border-radius:50%;width:420px;height:420px;right:-100px;top:-120px;animation:orbit 18s linear infinite}.hero:after{width:300px;height:300px;right:15px;top:-55px;animation-direction:reverse}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(54,214,208,.4);background:rgba(54,214,208,.08);padding:8px 13px;border-radius:999px;color:#9ef8f0;font-size:12px;font-weight:800;letter-spacing:1px}.pulse{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 0 6px rgba(54,214,208,.14);animation:pulse 1.7s infinite}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.04;letter-spacing:-2px;margin:22px 0}.gradient{background:linear-gradient(90deg,#fff,#71f4e7);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:17px;line-height:1.75;color:#c6d3ed;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 19px;border-radius:12px;font-weight:800;font-size:14px;transition:.25s;border:1px solid transparent}.btn:hover{transform:translateY(-3px)}.primary{background:var(--cyan);color:#06152d}.secondary{border-color:#526786;color:#fff;background:rgba(255,255,255,.04)}
+.dashboard{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:24px;padding:20px;box-shadow:0 25px 70px #0005;transform:rotate(1deg);animation:float 5s ease-in-out infinite}.dash-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:15px;border-bottom:1px solid #ffffff20;color:#d8e6ff;font-size:12px}.live{color:#8cf4db}.dash-title{font-size:19px;font-weight:800;margin:19px 0}.dash-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{padding:15px;background:#ffffff0d;border:1px solid #ffffff16;border-radius:15px}.mini .ico{font-size:22px}.mini small{display:block;color:#aebdd8;margin-top:9px}.mini strong{display:block;margin-top:4px;font-size:14px}.progress{height:7px;background:#ffffff20;border-radius:9px;margin-top:15px;overflow:hidden}.progress span{display:block;width:76%;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:9px;animation:grow 2s ease-out}
+.trust{background:#fff;border-bottom:1px solid var(--line)}.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:22px 0}.trust-item{display:flex;gap:10px;align-items:center;color:#52617a;font-size:13px;font-weight:700}.trust-item b{font-size:22px}
+section{padding:78px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 36px}.kicker{font-size:12px;font-weight:900;letter-spacing:1.7px;color:#217bce;text-transform:uppercase}.section-head h2{font-size:clamp(28px,3.6vw,43px);letter-spacing:-1px;margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;position:relative;overflow:hidden;transition:.28s;box-shadow:0 6px 25px #1a31500a}.service:after{content:"";position:absolute;right:-35px;bottom:-45px;width:110px;height:110px;background:linear-gradient(135deg,#e8f5ff,#dffbf8);border-radius:50%;transition:.3s}.service:hover{transform:translateY(-7px);box-shadow:0 18px 40px #16345a16;border-color:#b8d6ff}.service:hover:after{transform:scale(1.35)}.service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:#edf5ff;font-size:25px;margin-bottom:18px}.service h3{font-size:19px;margin:0 0 10px}.service p{font-size:14px;color:var(--muted);line-height:1.7;margin:0 0 15px}.service ul{padding-left:18px;color:#4f5e78;font-size:13px;line-height:1.9;margin:0;position:relative;z-index:1}.service .tag{display:inline-block;margin-top:16px;color:#1768bd;background:#edf6ff;padding:7px 10px;border-radius:8px;font-size:11px;font-weight:900;position:relative;z-index:1}
+.dark-section{background:var(--navy);color:#fff}.dark-section .section-head p{color:#b7c4dc}.dark-section .kicker{color:var(--cyan)}.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:22px;border:1px solid #ffffff1e;border-radius:18px;background:#ffffff08}.step-num{width:36px;height:36px;border-radius:11px;background:var(--cyan);color:#07152e;display:grid;place-items:center;font-weight:900}.step h3{font-size:16px;margin:17px 0 8px}.step p{font-size:13px;color:#b9c8e0;line-height:1.65;margin:0}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;display:flex;gap:18px;align-items:flex-start}.project-icon{font-size:30px;background:#eef4ff;border-radius:14px;padding:15px}.project h3{margin:0 0 8px}.project p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}.note{margin-top:20px;padding:15px 18px;border-radius:13px;background:#fff8e9;border:1px solid #ffe1aa;color:#79511b;font-size:13px;line-height:1.6}
+.contact{background:linear-gradient(135deg,#eaf3ff,#e9fbf8)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}.contact-copy h2{font-size:38px;letter-spacing:-1px;margin:12px 0}.contact-copy p{line-height:1.75;color:#596981}.contact-points{display:grid;gap:12px;margin-top:25px}.contact-point{display:flex;gap:12px;align-items:center;font-size:14px;font-weight:700}.contact-point span{font-size:20px}.form{background:#fff;border:1px solid #dce6f2;border-radius:22px;padding:25px;box-shadow:0 15px 45px #1c40600c}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#44536d}.field input,.field select,.field textarea{width:100%;padding:13px;border:1px solid #d8e1ee;border-radius:10px;font:inherit;font-size:14px;background:#fbfcff;color:var(--ink)}.field textarea{min-height:105px;resize:vertical}.form button{width:100%;border:0;cursor:pointer;margin-top:15px}.form-hint{font-size:11px;color:#78849a;line-height:1.5;margin-top:10px}
+footer{background:#081127;color:#aab8d2;padding:30px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer-brand{color:#fff;font-size:21px;font-weight:900;letter-spacing:2px}.footer-brand span{color:var(--cyan)}footer small{font-size:12px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@keyframes orbit{to{transform:rotate(360deg)}}@keyframes pulse{50%{box-shadow:0 0 0 10px rgba(54,214,208,0)}}@keyframes float{50%{transform:translateY(-9px) rotate(0deg)}}@keyframes grow{from{width:0}to{width:76%}}
+@media(max-width:900px){.hero-grid,.contact-grid{grid-template-columns:1fr}.dashboard{max-width:520px}.services{grid-template-columns:repeat(2,1fr)}.workflow{grid-template-columns:repeat(2,1fr)}.trust-row{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0b1530;padding:20px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.menu{display:block}}
+@media(max-width:600px){.hero{padding:60px 0}.services,.projects,.workflow,.form-grid{grid-template-columns:1fr}.trust-row{grid-template-columns:1fr 1fr}.service{padding:21px}.project{padding:20px}.section-head{text-align:left}.field.full{grid-column:auto}.hero p{font-size:15px}.dashboard{padding:14px}.nav{height:68px}.navlinks{top:68px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+.service{cursor:pointer}
+.service:focus{outline:3px solid #36d6d0;outline-offset:3px}
+.service .open-hint{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:12px;font-weight:800;color:#1768bd;position:relative;z-index:1}
+.service .open-hint span{transition:transform .2s}
+.service:hover .open-hint span{transform:translateX(4px)}
+.service-modal{position:fixed;inset:0;z-index:1000;background:rgba(4,12,29,.78);display:none;align-items:center;justify-content:center;padding:18px}
+.service-modal.open{display:flex}
+.service-modal-card{background:#fff;border-radius:22px;width:min(900px,100%);max-height:92vh;overflow:auto;box-shadow:0 25px 90px #0006;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.service-modal-visual{min-height:330px;background:linear-gradient(145deg,#0b1530,#16436b);display:flex;align-items:center;justify-content:center;padding:24px}
+.service-modal-visual svg{width:100%;max-width:390px;height:auto}
+.service-modal-copy{padding:34px}
+.service-modal-copy h2{font-size:27px;margin:10px 0 12px;color:#14213c}
+.service-modal-copy p{color:#65718a;line-height:1.75}
+.service-modal-copy ul{padding-left:20px;color:#44536d;line-height:1.9;font-size:14px}
+.modal-close{position:absolute;right:12px;top:12px;border:0;border-radius:50%;width:38px;height:38px;background:#edf2f8;color:#10203c;font-size:22px;cursor:pointer;z-index:2}
+.modal-contact{display:inline-flex;background:#0b1530;color:#fff;border-radius:10px;padding:12px 15px;font-weight:800;font-size:13px;margin-top:8px}
+@media(max-width:700px){.service-modal-card{grid-template-columns:1fr}.service-modal-visual{min-height:220px}.service-modal-copy{padding:24px}}
+
+
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:90;display:flex;align-items:center;gap:10px;background:#20c768;color:#062b17;padding:13px 17px;border-radius:999px;box-shadow:0 12px 35px #0a1e2b35;font-size:14px;font-weight:900;transition:transform .2s,box-shadow .2s}
+.whatsapp-float:hover{transform:translateY(-4px);box-shadow:0 16px 38px #0a1e2b55}
+.whatsapp-icon{width:28px;height:28px;display:grid;place-items:center;background:#fff;border-radius:50%;font-size:18px}
+@media(max-width:600px){.whatsapp-float{right:12px;bottom:12px;padding:12px}.whatsapp-float .wa-label{display:none}}
+
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#anasayfa" aria-label="ERON YAPI ana sayfa">ER<span>O</span>N <small style="font-size:12px;letter-spacing:1px">YAPI</small></a>
+<nav class="navlinks" id="navlinks">
+<a href="#hizmetler">Hizmetler</a><a href="#surec">Çalışma Modeli</a><a href="#ornekler">Çözüm Alanları</a><a href="#eron-cozumleri">ERON Sistemleri</a><a href="#iletisim" class="nav-cta">Teklif İste ↗</a>
+</nav>
+<button class="menu" id="menuBtn" aria-label="Menüyü aç">☰</button>
+</div></header>
+<main>
+<section class="hero" id="anasayfa"><div class="container hero-grid">
+<div>
+<div class="eyebrow"><span class="pulse"></span> ŞANTİYE • HAKEDİŞ • İHALE • TASARIM</div>
+<h1>Projelerinizi<br><span class="gradient">kontrollü yönetin.</span></h1>
+<p>ERON YAPI; iş makinesi, kamyon, hafriyat ve taşeronluk hizmetleri ile şantiye yönetimi, hakediş hazırlama, ihale ve teklif dosyaları, şantiye muhasebesi ile çizim ve tasarım süreçlerinizi tek noktada düzenlemenize yardımcı olur.</p>
+<div class="actions"><a class="btn primary" href="#hizmetler">Hizmetleri İncele <span>↘</span></a><a class="btn secondary" href="#iletisim">Projenizi Anlatın</a></div>
+<div style="margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:10px 20px;color:#d8e6ff;font-size:13px">
+<span>👷 <strong style="color:#fff">Erkan Bostancı</strong> · İnşaat Mühendisi</span>
+<a href="tel:+905360308221">☎ 0536 030 82 21</a>
+<a href="mailto:bostancierkan1@gmail.com">✉ bostancierkan1@gmail.com</a>
+</div>
+</div>
+<div class="dashboard" aria-label="ERON hizmet panosu">
+<div class="dash-top"><strong>ERON / PROJE KONTROLÜ</strong><span class="live">● ÇÖZÜM ODAKLI</span></div>
+<div class="dash-title">Şantiye ve iş takibi</div>
+<div class="dash-cards">
+<div class="mini"><div class="ico">📐</div><small>Teknik ofis</small><strong>Çizim & metraj</strong></div>
+<div class="mini"><div class="ico">🧾</div><small>Hakediş</small><strong>İmalat & ödeme</strong></div>
+<div class="mini"><div class="ico">📊</div><small>Şantiye muhasebesi</small><strong>Gelir-gider & cari</strong></div>
+<div class="mini"><div class="ico">📁</div><small>İhale dosyası</small><strong>Teklif & evrak</strong></div>
+</div>
+<div class="progress"><span></span></div>
+<div style="display:flex;justify-content:space-between;color:#afc0dc;font-size:11px;margin-top:9px"><span>Planla</span><span>Takip et</span><span>Raporla</span></div>
+</div>
+</div></section>
+<div class="trust"><div class="container trust-row">
+<div class="trust-item"><b>📐</b> Teknik çizim ve metraj</div><div class="trust-item"><b>🧾</b> Hakediş ve teklif</div><div class="trust-item"><b>🏗️</b> Şantiye takibi</div><div class="trust-item"><b>📊</b> Muhasebe ve raporlama</div>
+</div></div>
+<section id="hizmetler"><div class="container">
+<div class="section-head reveal"><div class="kicker">ERON HİZMETLERİ</div><h2>İşin sahasından dosyasına kadar</h2><p>İhtiyacınıza göre tek bir hizmet veya birbirini tamamlayan bir çalışma paketi seçebilirsiniz.</p></div>
+<div class="services">
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🏗️</div><h3>Şantiye Yönetimi ve Takibi</h3><p>Sahadaki ilerlemeyi, ekipleri ve iş kalemlerini düzenli kayıtlarla izlemeye yönelik destek.</p><ul><li>Günlük/aylık iş takibi</li><li>Makine, kamyon ve taşeron kayıtları</li><li>İmalat ve ilerleme raporları</li></ul><span class="tag">SAHA KONTROLÜ</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🌉</div><h3>Yol, Baraj ve Altyapı Sanat Yapıları</h3><p>Karayolu ve altyapı projeleri ile su yapılarında saha organizasyonu ve teknik ofis süreçlerine yönelik destek.</p><ul><li>Yol ve ulaşım altyapısı işleri</li><li>Baraj, gölet ve su yapıları</li><li>Değebaj / derivasyon işleri</li><li>Köprü, menfez ve diğer sanat yapıları</li><li>Metraj, hakediş ve teklif dosyaları</li></ul><span class="tag">YOL • SU YAPILARI • ALTYAPI</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article><article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🧾</div><h3>Hakediş Hazırlama</h3><p>İmalat miktarları ve sözleşme kalemlerine dayalı hakediş tablolarının hazırlanması.</p><ul><li>Metraj ve ataşman düzenleme</li><li>Taşeron hakedişleri</li><li>Hafriyat, makine ve nakliye hakedişleri</li></ul><span class="tag">METRAJ • İMALAT • ÖDEME</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">📁</div><h3>İhale Dosyası ve Teklif</h3><p>İhale veya özel iş teklifleri için belgelerin ve fiyat çalışmalarının düzenlenmesine destek.</p><ul><li>İhale evrak kontrol listesi</li><li>Birim fiyat ve maliyet analizi</li><li>Teklif dosyası ve sunum düzeni</li></ul><span class="tag">DOSYA • FİYAT • TEKLİF</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">📊</div><h3>Şantiye Muhasebesi</h3><p>Şantiye bazında gelir-gider, cari hesap ve tahsilat kayıtlarını takip etmeye yönelik raporlama.</p><ul><li>Gelir-gider ve cari takip</li><li>Makine, kamyon ve yakıt giderleri</li><li>Aylık maliyet ve durum raporları</li></ul><span class="tag">CARİ • MALİYET • RAPOR</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">📐</div><h3>Çizim, Tasarım ve Metraj</h3><p>Proje ihtiyacına göre teknik çizimlerin, ölçümlerin ve metraj tablolarının hazırlanmasına destek.</p><ul><li>2D teknik çizim düzenleme</li><li>Metraj ve keşif tabloları</li><li>Sunum ve tasarım görselleri</li></ul><span class="tag">ÇİZİM • TASARIM • METRAJ</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">💻</div><h3>Excel ve Dijital İş Takibi</h3><p>İşletmenize uygun takip tabloları, raporlar ve pratik dijital iş akışları.</p><ul><li>Excel otomasyonları</li><li>İş makinesi bakım-onarım kayıtları</li><li>Özet ekranlar ve PDF raporları</li></ul><span class="tag">EXCEL • OTOMASYON</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+</div></div></section>
+<section class="dark-section" id="surec"><div class="container">
+<div class="section-head reveal"><div class="kicker">ÇALIŞMA MODELİ</div><h2>İhtiyaçtan rapora, dört adım</h2><p>İşin kapsamı ve teslim edilecek çıktılar baştan netleştirilir.</p></div>
+<div class="workflow">
+<div class="step reveal"><div class="step-num">01</div><h3>İhtiyacı anlayalım</h3><p>İşin türünü, mevcut dosyaları, metrajları ve beklentiyi birlikte netleştirelim.</p></div>
+<div class="step reveal"><div class="step-num">02</div><h3>Kapsamı belirleyelim</h3><p>Hizmet kalemlerini, teslim formatını, takvimi ve teklif kapsamını tanımlayalım.</p></div>
+<div class="step reveal"><div class="step-num">03</div><h3>Hazırlayalım</h3><p>Mutabık kalınan çizim, tablo, dosya veya takip düzenini oluşturalım.</p></div>
+<div class="step reveal"><div class="step-num">04</div><h3>Kontrol ve teslim</h3><p>Kontrolleri yapalım; dosyaları ve raporları kararlaştırılan formatta teslim edelim.</p></div>
+</div></div></section>
+
+<section id="eron-cozumleri"><div class="container">
+<div class="section-head reveal"><div class="kicker">ERON DİJİTAL ÜRÜNLERİ</div><h2>Sadece danışmanlık değil, işinizi kolaylaştıran sistemler</h2><p>ERON'un önceki proje fikirlerini de siteye ekledik: Excel'den beslenen cari takip, güvenli senkronizasyon, satılabilir web sitesi paketleri ve uzaktan şantiye yönetimi.</p></div>
+<div class="services">
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🧮</div><h3>ERON Cari ve İş Takip Sistemi</h3><p>İş makinesi bakım-onarım firmaları ve küçük işletmeler için müşteri, yapılan iş, parça/hizmet, tahsilat ve bakiye takibi.</p><ul><li>Müşteri → İş → Parça/Hizmet</li><li>Miktar, birim fiyat ve ara toplam</li><li>Tahsilat, bakiye ve cari raporu</li><li>Yazdırılabilir Excel/PDF çıktıları</li></ul><span class="tag">CARİ TAKİP • İŞ KAYDI</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🔄</div><h3>ERON Güvenli Senkronizasyon</h3><p>Mevcut Excel çalışma düzenini koruyarak veri aktarımını kontrollü ve izlenebilir hâle getirme hedefi.</p><ul><li>Excel değişikliklerini kontrol etme</li><li>Formül ve bağlantıları korumaya yönelik tasarım</li><li>Yedekleme ve hata kontrol adımları</li><li>Çakışan kayıtlar için kontrol mantığı</li></ul><span class="tag">EXCEL • YEDEK • KONTROL</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🌐</div><h3>Hazır Web Sitesi Paketleri</h3><p>Yerel işletmeler için uygun maliyetli, mobil uyumlu ve kolayca özelleştirilebilen web sitesi paketleri.</p><ul><li>Oto servis ve iş makinesi bakım</li><li>İnşaat ve hafriyat firmaları</li><li>Kurumsal tanıtım sayfaları</li><li>İletişim ve teklif talep formu</li></ul><span class="tag">TASARLA • UYARLA • SUN</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🛰️</div><h3>Uzaktan Şantiye Yönetimi</h3><p>Saha kayıtlarını düzenli raporlara dönüştürmek isteyen işletmeler için uzaktan takip ve raporlama modeli.</p><ul><li>Günlük makine ve kamyon kayıtları</li><li>Taşeron ve hafriyat hakedişleri</li><li>Şantiye gelir-gider takibi</li><li>Aylık yönetim özeti</li></ul><span class="tag">SAHA VERİSİ • RAPORLAMA</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">📈</div><h3>Yönetim Paneli ve Raporlar</h3><p>İşin tutarı, tahsilat, kalan bakiye, maliyet ve iş ilerlemesini tek ekranda görmeye yönelik raporlama tasarımı.</p><ul><li>Toplam yapılan iş ve tahsilat</li><li>Müşteri/cari bazında bakiye</li><li>Makine ve proje bazında özet</li><li>Excel ve PDF rapor çıktısı</li></ul><span class="tag">DASHBOARD • RAPOR</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+<article class="service reveal" role="button" tabindex="0" aria-label="Hizmet görselini ve detaylarını aç"><div class="service-icon">🧰</div><h3>İş Makinesi Bakım-Onarım Takibi</h3><p>Bakım-onarım kayıtlarını, kullanılan parçaları ve hizmetleri müşteri ve makine bazında düzenleme.</p><ul><li>Parça adı ve birim fiyat</li><li>İşçilik ve hizmet bedeli</li><li>Yol/nakliye giderlerini ayrı gösterme</li><li>İş geçmişi ve müşteri raporu</li></ul><span class="tag">MAKİNE • PARÇA • SERVİS</span><span class="open-hint">Görselleri ve detayları gör <span>→</span></span></article>
+</div>
+<div class="note reveal"><strong>Geliştirme notu:</strong> Bu sayfada anlatılan dijital ürünler ve senkronizasyon özellikleri proje kapsamına göre geliştirilecek hizmetlerdir; henüz tamamlanmış yazılım veya canlı entegrasyon olarak sunulmamaktadır. Müşteri dosyaları üzerinde işlem yapılmadan önce yedek alınır ve kapsam/teslim koşulları belirlenir.</div>
+</div></section>
+
+<section id="ornekler"><div class="container">
+<div class="section-head reveal"><div class="kicker">ÇÖZÜM ALANLARI</div><h2>Farklı işlere uyarlanabilir destek</h2><p>Hizmet kapsamı proje ve sözleşme koşullarına göre ayrıca belirlenir.</p></div>
+<div class="projects">
+<div class="project reveal"><div class="project-icon">🌉</div><div><h3>Yol, baraj, gölet ve sanat yapıları</h3><p>Yol işleri, baraj ve gölet projeleri, değebaj/derivasyon çalışmaları, köprü ve menfez gibi sanat yapıları için saha takibi, metraj, hakediş ve teklif desteği.</p></div></div>
+<div class="project reveal"><div class="project-icon">🚜</div><div><h3>Hafriyat ve iş makineleri</h3><p>Makine ve kamyon çalışma kayıtları, tonaj/sefer takibi, yakıt ve gider tabloları, taşeron hakedişleri ve aylık raporlar.</p></div></div>
+<div class="project reveal"><div class="project-icon">🚧</div><div><h3>Altyapı ve üstyapı işleri</h3><p>Metraj özetleri, imalat kalemleri, birim fiyat analizleri, hakediş cetvelleri ve iş ilerleme raporları.</p></div></div>
+<div class="project reveal"><div class="project-icon">📑</div><div><h3>Kamu ve özel sektör teklifleri</h3><p>İhale şartlarına göre belge kontrolü, fiyatlandırma çalışması ve teklif dosyasının düzenlenmesine yönelik destek.</p></div></div>
+<div class="project reveal"><div class="project-icon">🏢</div><div><h3>İşletme ve şantiye raporları</h3><p>Cari hesaplar, tahsilatlar, giderler ve yapılan işler için anlaşılır Excel/PDF raporlama yapısı.</p></div></div>
+</div>
+<div class="note reveal"><strong>Şeffaf kapsam:</strong> ERON'un sunduğu hizmetler proje bazında netleştirilir. Resmî mühendislik imzası, yetki veya mevzuata tabi işlemler gerektiğinde ilgili yetkili uzmanların sorumluluğunda yürütülmelidir. Bu sayfa bir hizmet tanıtım taslağıdır; referans veya tamamlanmış proje iddiası içermez.</div>
+</div></section>
+<section class="contact" id="iletisim"><div class="container contact-grid">
+<div class="contact-copy reveal"><div class="kicker">İLETİŞİM & TEKLİF</div><h2>Projenizi konuşalım.</h2><p>Hangi hizmete ihtiyacınız olduğunu ve işin kapsamını yazın. Bilgileriniz e-posta taslağına aktarılır; gönderim sizin onayınızla yapılır.</p>
+<div class="contact-points"><div class="contact-point"><span>📐</span> Çizim, tasarım ve metraj</div><div class="contact-point"><span>🧾</span> Hakediş, ihale ve teklif dosyası</div><div class="contact-point"><span>📊</span> Şantiye muhasebesi ve raporlama</div></div>
+<div class="contact-points" style="margin-top:22px;padding-top:20px;border-top:1px solid #d3dfed">
+<div class="contact-point"><span>👷</span> Erkan Bostancı · İnşaat Mühendisi</div>
+<div class="contact-point"><span>☎</span> <a href="tel:+905360308221">0536 030 82 21</a></div>
+<div class="contact-point"><span>✉</span> <a href="mailto:bostancierkan1@gmail.com">bostancierkan1@gmail.com</a></div>
+<div class="contact-point"><span>💬</span> <a href="https://wa.me/905360308221?text=Merhaba%20ERON%20YAPI%2C%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp üzerinden mesaj gönder</a></div>
+</div>
+</div>
+<form class="form reveal" id="contactForm">
+<div class="form-grid">
+<div class="field"><label for="name">Adınız / Firma</label><input id="name" required placeholder="Adınız veya firma adı"></div>
+<div class="field"><label for="phone">Telefon</label><input id="phone" placeholder="Telefon numaranız"></div>
+<div class="field full"><label for="service">İlgilendiğiniz hizmet</label><select id="service" required><option value="">Hizmet seçin</option><option>Şantiye yönetimi ve takibi</option><option>Hakediş hazırlama</option><option>İhale dosyası ve teklif hazırlama</option><option>Şantiye muhasebesi</option><option>Çizim, tasarım ve metraj</option><option>Excel ve dijital iş takibi</option><option>Birden fazla hizmet</option></select></div>
+<div class="field full"><label for="details">İşin kısa açıklaması</label><textarea id="details" placeholder="İşin türü, konumu, metrajı ve ihtiyaç duyduğunuz teslimler..."></textarea></div>
+</div>
+<button class="btn primary" type="submit">E-posta Taslağı Oluştur ↗</button>
+<div class="form-hint" id="formHint">Bu taslak tek başına veri göndermez. E-posta uygulamanız açılırsa bilgileri kontrol edip siz gönderirsiniz. Yayına almadan önce gerçek telefon, e-posta ve firma bilgileri eklenmelidir.</div>
+</form>
+</div></section>
+</main>
+<footer><div class="container footer-row"><a href="#anasayfa" class="footer-brand">ER<span>O</span>N</a><small>Yol • Baraj • Değebaj • Sanat Yapıları • Gölet • Hafriyat • Taşeronluk</small><small>© <span id="year"></span> ERON — Tanıtım sitesi taslağı</small></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{nav.classList.toggle('open');menuBtn.textContent=nav.classList.contains('open')?'✕':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.textContent='☰'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim(), phone=document.getElementById('phone').value.trim(), service=document.getElementById('service').value, details=document.getElementById('details').value.trim();
+ const subject=encodeURIComponent('ERON hizmet / teklif talebi - '+service);
+ const body=encodeURIComponent('Ad / Firma: '+name+'\nTelefon: '+phone+'\nHizmet: '+service+'\nİşin açıklaması: '+details+'\n\nBu mesaj ERON web sitesi formundan oluşturuldu.');
+ document.getElementById('formHint').textContent='E-posta taslağı açılıyor. Açılmazsa tarayıcınızın e-posta bağlantılarını desteklediğini kontrol edin.';
+ window.location.href='mailto:?subject='+subject+'&body='+body;
+});
+</script>
+
+<div class="service-modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="service-modal-card">
+    <button class="modal-close" id="modalClose" aria-label="Kapat">×</button>
+    <div class="service-modal-visual" id="modalVisual" aria-hidden="true"></div>
+    <div class="service-modal-copy">
+      <div class="kicker">ERON YAPI HİZMETİ</div>
+      <h2 id="modalTitle">Hizmet detayı</h2>
+      <p id="modalDescription"></p>
+      <ul id="modalList"></ul>
+      <a class="modal-contact" href="#iletisim" id="modalContact">Bu hizmet için teklif iste ↗</a>
+    </div>
+  </div>
+</div>
+<script>
+const serviceIllustrations = [
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M30 210 Q120 170 210 207 T390 195 V238 H30Z" fill="#876b4b"/><path d="M35 225H385" stroke="#e4d1a9" stroke-width="4" stroke-dasharray="18 10"/><rect x="90" y="139" width="112" height="43" rx="8" fill="#ffb34f"/><rect x="118" y="112" width="43" height="31" rx="5" fill="#ffd37a"/><path d="M127 112L143 91 170 91 170 112" fill="#77d6dc"/><circle cx="116" cy="185" r="17" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><circle cx="182" cy="185" r="17" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><path d="M194 145L243 94 276 101 292 126" stroke="#ffbd59" stroke-width="15" stroke-linecap="round" fill="none"/><path d="M289 125L316 148 303 169" stroke="#ffbd59" stroke-width="12" stroke-linecap="round" fill="none"/><path d="M294 170L326 170 337 183 302 183Z" fill="#d8a14b"/><text x="35" y="50" fill="#9ef8f0" font-size="13" font-weight="700">İŞ MAKİNELERİ</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M30 205L390 185V238H30Z" fill="#6f624f"/><path d="M45 218H380" stroke="#f4e5bf" stroke-width="4" stroke-dasharray="19 12"/><rect x="104" y="115" width="166" height="62" rx="7" fill="#ffb34f"/><rect x="127" y="86" width="74" height="33" rx="4" fill="#ffd37a"/><rect x="138" y="93" width="25" height="20" fill="#78d9e4"/><path d="M199 91H251L267 115H199Z" fill="#d98c31"/><circle cx="143" cy="185" r="21" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><circle cx="245" cy="185" r="21" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><path d="M275 128L330 128 348 155 348 177 270 177Z" fill="#e9a342"/><circle cx="291" cy="185" r="18" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><circle cx="337" cy="185" r="18" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><text x="35" y="50" fill="#9ef8f0" font-size="13" font-weight="700">KAMYON VE NAKLİYE</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M28 205L100 145 160 177 235 100 300 153 390 116V240H28Z" fill="#8d795d"/><path d="M28 222L116 184 205 210 292 178 390 204V240H28Z" fill="#b49a72"/><path d="M65 222L138 191 201 213 277 187 354 214" stroke="#e8d6ad" stroke-width="4" fill="none" stroke-dasharray="14 9"/><rect x="145" y="113" width="87" height="35" rx="5" fill="#ffb34f"/><path d="M156 113L174 88 201 88 214 113" fill="#ffd37a"/><path d="M211 119L258 81 281 88 296 111" stroke="#ffb34f" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M294 111L321 133 308 150" stroke="#ffb34f" stroke-width="11" stroke-linecap="round" fill="none"/><circle cx="164" cy="153" r="14" fill="#17243a" stroke="#d8e2ef" stroke-width="4"/><circle cx="216" cy="153" r="14" fill="#17243a" stroke="#d8e2ef" stroke-width="4"/><text x="35" y="50" fill="#9ef8f0" font-size="13" font-weight="700">HAFRİYAT VE DOLGU</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M28 195L100 160 180 190 260 142 390 184V240H28Z" fill="#79694f"/><path d="M35 203H385" stroke="#e6d7b7" stroke-width="4" stroke-dasharray="16 9"/><path d="M65 102L120 75 175 102V170H65Z" fill="#2878ff"/><path d="M120 75V170" stroke="#d8eaff" stroke-width="3"/><path d="M250 86L320 86 350 118 350 167 250 167Z" fill="#f3ad4d"/><path d="M270 86V118H325V86" fill="#72d6dc"/><circle cx="274" cy="177" r="17" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><circle cx="330" cy="177" r="17" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><path d="M190 70V195M175 86H205" stroke="#9ef8f0" stroke-width="3"/><text x="35" y="50" fill="#9ef8f0" font-size="13" font-weight="700">ŞANTİYE YÖNETİMİ</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M35 205L385 205" stroke="#6784a8" stroke-width="2"/><path d="M55 75H365V195H55Z" fill="#edf4ff" rx="8"/><path d="M55 105H365M55 135H365M55 165H365M135 75V195M220 75V195M295 75V195" stroke="#bdd0e7" stroke-width="2"/><rect x="67" y="86" width="55" height="12" rx="3" fill="#2878ff"/><rect x="146" y="116" width="61" height="12" rx="3" fill="#36d6d0"/><rect x="230" y="146" width="49" height="12" rx="3" fill="#ffb34f"/><path d="M73 178L104 152 153 160 192 122 238 137 289 98 340 111" stroke="#2878ff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="289" cy="98" r="6" fill="#36d6d0"/><text x="35" y="50" fill="#9ef8f0" font-size="13" font-weight="700">HAKEDİŞ VE METRAJ</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M55 210V90L210 45 365 90V210Z" fill="#dfeaff"/><path d="M55 90L210 45 365 90" stroke="#36d6d0" stroke-width="5" fill="none"/><path d="M90 110H330M90 140H330M90 170H330" stroke="#9db6d8" stroke-width="3"/><rect x="105" y="101" width="43" height="19" rx="3" fill="#2878ff"/><rect x="162" y="131" width="72" height="19" rx="3" fill="#ffb34f"/><rect x="247" y="161" width="56" height="19" rx="3" fill="#36d6d0"/><path d="M88 222H332" stroke="#9ef8f0" stroke-width="3"/><text x="35" y="35" fill="#9ef8f0" font-size="13" font-weight="700">İHALE VE TEKLİF</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><rect x="75" y="54" width="270" height="162" rx="12" fill="#eaf2ff"/><rect x="92" y="70" width="236" height="27" rx="5" fill="#2878ff"/><text x="108" y="88" fill="#fff" font-size="12" font-weight="700">ERON ŞANTİYE RAPORU</text><path d="M100 116H320M100 140H320M100 164H320M100 188H320" stroke="#c2d2e8" stroke-width="2"/><rect x="108" y="122" width="75" height="12" rx="3" fill="#36d6d0"/><rect x="190" y="146" width="96" height="12" rx="3" fill="#ffb34f"/><rect x="108" y="170" width="130" height="12" rx="3" fill="#2878ff"/><text x="35" y="38" fill="#9ef8f0" font-size="13" font-weight="700">MUHASEBE VE RAPORLAMA</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M50 218L50 70 190 70 190 218M230 218L230 70 370 70 370 218" stroke="#9ef8f0" stroke-width="3" fill="none"/><path d="M50 115H190M50 160H190M230 115H370M230 160H370" stroke="#7aa7db" stroke-width="2"/><path d="M65 205L110 170 140 185 175 130M245 203L280 178 310 145 350 120" stroke="#ffb34f" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="175" cy="130" r="6" fill="#36d6d0"/><circle cx="350" cy="120" r="6" fill="#36d6d0"/><text x="35" y="45" fill="#9ef8f0" font-size="13" font-weight="700">ÇİZİM VE TASARIM</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><rect x="65" y="52" width="290" height="166" rx="10" fill="#dce9fa"/><rect x="80" y="67" width="260" height="135" rx="5" fill="#fff"/><rect x="95" y="82" width="95" height="12" rx="3" fill="#2878ff"/><rect x="95" y="105" width="225" height="7" rx="3" fill="#cbd9ea"/><rect x="95" y="120" width="205" height="7" rx="3" fill="#cbd9ea"/><rect x="95" y="145" width="55" height="40" rx="4" fill="#36d6d0"/><rect x="160" y="145" width="55" height="40" rx="4" fill="#ffb34f"/><rect x="225" y="145" width="95" height="40" rx="4" fill="#2878ff"/><path d="M180 219H240L252 236H168Z" fill="#9db2ce"/><text x="35" y="40" fill="#9ef8f0" font-size="13" font-weight="700">DİJİTAL İŞ TAKİBİ</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M35 198L95 170 145 187 220 125 285 155 385 100V238H35Z" fill="#85745b"/><path d="M45 220H375" stroke="#e5d6b3" stroke-width="4" stroke-dasharray="18 10"/><path d="M62 110L132 70 202 110V170H62Z" fill="#2878ff"/><path d="M132 70V170" stroke="#d8eaff" stroke-width="3"/><path d="M240 98L308 98 346 130 346 175 240 175Z" fill="#ffb34f"/><path d="M260 98V127H320V98" fill="#78d9e4"/><circle cx="265" cy="184" r="16" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><circle cx="324" cy="184" r="16" fill="#17243a" stroke="#d8e2ef" stroke-width="5"/><text x="35" y="48" fill="#9ef8f0" font-size="13" font-weight="700">YOL VE SU YAPILARI</text></svg>`,
+`<svg viewBox="0 0 420 270" xmlns="http://www.w3.org/2000/svg"><rect x="15" y="18" width="390" height="234" rx="22" fill="#122b50"/><path d="M35 200Q100 160 160 193T285 188T385 185V238H35Z" fill="#907a59"/><path d="M50 100L120 75 190 100V194H50Z" fill="#8c9fb9"/><path d="M50 100L120 75 190 100" fill="none" stroke="#dce8f7" stroke-width="4"/><path d="M230 88L295 88 355 120 355 190 230 190Z" fill="#2878ff"/><path d="M246 103H339V176H246Z" fill="#6ad6d2"/><path d="M246 130Q270 115 292 132T339 130V176H246Z" fill="#2583bd"/><path d="M190 170Q215 160 230 170T260 170" stroke="#6ad6d2" stroke-width="6" fill="none"/><text x="35" y="48" fill="#9ef8f0" font-size="13" font-weight="700">GÖLET VE BARAJ</text></svg>`
+];
+const serviceDetails = [
+{title:'İş Makinesi Hizmetleri',desc:'Kazı, yükleme ve saha işleri için iş makinesi organizasyonu ve çalışma takibi.',items:['Makine ve çalışma saati kayıtları','Kazı, yükleme ve saha organizasyonu','Yakıt ve bakım giderlerinin takibi']},
+{title:'Kamyon ve Nakliye İşleri',desc:'Hafriyat ve malzeme nakliyesinde sefer, tonaj ve maliyet takibi.',items:['Sefer ve tonaj kayıtları','Nakliye ve döküm giderleri','Kamyon ve taşeron hakedişleri']},
+{title:'Hafriyat ve Dolgu',desc:'Kazı, dolgu, temel açma ve saha tesviyesi süreçlerinin takip edilmesi.',items:['Kazı ve dolgu metrajı','Makine-kamyon koordinasyonu','İmalat ilerleme raporları']},
+{title:'Şantiye Yönetimi ve Takibi',desc:'Saha verilerinin düzenlenmesi ve proje ilerlemesinin raporlanması.',items:['Günlük ve aylık iş kayıtları','Makine, kamyon ve taşeron takibi','İş programı ve ilerleme özeti']},
+{title:'Hakediş Hazırlama',desc:'Sözleşme ve gerçekleşen imalat miktarlarına dayalı hakediş tabloları.',items:['Metraj ve ataşman düzenleme','Taşeron ve hafriyat hakedişleri','İmalat, birim fiyat ve ödeme cetvelleri']},
+{title:'İhale Dosyası ve Teklif',desc:'İhale veya özel işler için fiyatlandırma ve evrak düzenleme desteği.',items:['Evrak kontrol listesi','Birim fiyat ve maliyet analizi','Teklif dosyası düzeni']},
+{title:'Şantiye Muhasebesi',desc:'Şantiye bazında gelir-gider, cari, tahsilat ve maliyet raporlaması.',items:['Gelir-gider ve cari hesap','Makine, kamyon ve yakıt giderleri','Aylık maliyet ve durum raporu']},
+{title:'Çizim, Tasarım ve Metraj',desc:'Teknik çizim, ölçüm, keşif ve metraj tablolarının hazırlanmasına destek.',items:['2D teknik çizim düzenleme','Metraj ve keşif tabloları','Sunum ve tasarım görselleri']},
+{title:'Excel ve Dijital İş Takibi',desc:'İşletmeye uygun takip tabloları, raporlar ve dijital iş akışları.',items:['Excel otomasyonları','Bakım-onarım kayıtları','Özet ekranlar ve PDF raporları']},
+{title:'Yol, Baraj ve Sanat Yapıları',desc:'Yol ve su yapıları projelerinde saha organizasyonu, metraj ve raporlama desteği.',items:['Yol ve ulaşım altyapısı','Baraj, gölet ve değebaj/derivasyon işleri','Köprü, menfez ve diğer sanat yapıları']}
+];
+const modal=document.getElementById('serviceModal');
+const modalClose=document.getElementById('modalClose');
+document.querySelectorAll('.services .service').forEach((card,index)=>{
+ card.addEventListener('click',()=>{
+   const d=serviceDetails[index] || {title:card.querySelector('h3')?.textContent || 'ERON YAPI hizmeti',desc:card.querySelector('p')?.textContent || '',items:[...card.querySelectorAll('li')].map(x=>x.textContent)};
+   document.getElementById('modalTitle').textContent=d.title;
+   document.getElementById('modalDescription').textContent=d.desc;
+   document.getElementById('modalList').innerHTML=d.items.map(x=>'<li>'+x+'</li>').join('');
+   document.getElementById('modalVisual').innerHTML=serviceIllustrations[index] || serviceIllustrations[0];
+   modal.classList.add('open');
+   document.body.style.overflow='hidden';
+ });
+ card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();card.click()}});
+});
+function closeServiceModal(){modal.classList.remove('open');document.body.style.overflow=''}
+modalClose.addEventListener('click',closeServiceModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeServiceModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeServiceModal()});
+document.getElementById('modalContact').addEventListener('click',closeServiceModal);
+</script>
+
+
+<a class="whatsapp-float" href="https://wa.me/905360308221?text=Merhaba%20ERON%20YAPI%2C%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp üzerinden ERON YAPI ile iletişime geç">
+  <span class="whatsapp-icon">✆</span><span class="wa-label">WhatsApp'tan Teklif Al</span>
+</a>
+
+</body>
+</html>
